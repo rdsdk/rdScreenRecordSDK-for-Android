@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_text_size">16dp</dimen>
+    <dimen name="dimen_width">90dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="text_min_width">70dp</dimen>
+    <dimen name="video_capture_layout_title_bar_width">180dp</dimen>
+    <dimen name="video_capture_main_title_bar_width">233dp</dimen>
+    <dimen name="video_capture_layout_title_bar_height">50dp</dimen>
+    <dimen name="item_width_height">60dp</dimen>
+    <dimen name="item_width">80dp</dimen>
+    <dimen name="hint_textsize">18dp</dimen>
+    <dimen name="hint_textsize_biger">25dp</dimen>
+    <dimen name="dimen_margin">-15dp</dimen>
+    <dimen name="dimen_margin_width">15dp</dimen>
+
+</resources>

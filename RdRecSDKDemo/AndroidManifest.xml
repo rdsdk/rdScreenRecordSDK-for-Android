@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rd.recsdk.demo"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23"
+        tools:ignore="OldTargetApi" />
+
+    <application
+        android:name=".AppImp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.rdrecsdk" >
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecSdkConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.rdrecsdk" />
+        <activity
+            android:name=".PlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="sensor"
+            android:theme="@style/Theme.rdrecsdk"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

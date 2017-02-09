@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#895968"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/show_float_window_button"
+            style="@style/txtStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="显示录屏悬浮窗" />
+
+        <Button
+            android:id="@+id/show_configuration_button"
+            style="@style/txtStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="录屏配置" />
+
+ 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#458468"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Uid直播方式"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etLivingUid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请设置正在直播中的Uid(数字或小写字母的组合(3-32个字符))"
+            android:singleLine="true"
+            android:text="aabbcc"
+            android:textColor="@color/main_color" />
+
+        <Button
+            android:id="@+id/mBtnPlayLiving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="查看uid直播" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#898256"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Url直播方式"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etLivingRtmp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="请设置要查看的直播流"
+            android:singleLine="true"
+            android:text="rtmp://"
+            android:textColor="@color/main_color" />
+
+        <Button
+            android:id="@+id/mBtnPlayLivingRtmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="2dp"
+            android:gravity="center"
+            android:text="查看url直播流" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':RdRecSDK'
+include ':RdRecSDKDemo'
+project(":RdRecSDK").projectDir = file("../RdRecSDK")

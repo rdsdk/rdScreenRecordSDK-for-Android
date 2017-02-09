@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="dkgray">#545454</color>
+    <color name="yello">#F8F8FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="darkgray">#AAAAAA</color>
+    <color name="lightgreen">#7cd12e</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="gray">#ff888888</color>
+    <color name="green">#ff00ff00</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="red">#ffff0000</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="normal_gb">#B2B2B2</color>
+    <color name="orange">#4fFFA500</color>
+    <color name="blue_trans">#7fff0000</color>
+    <color name="red_trans">#7fffff00</color>
+    <color name="black_trans">#4fcccccc</color>
+    <color name="main_bg">#f0f0f0</color>
+    <!-- 浮窗 -->
+    <color name="text_color_545454">#545454</color>
+    <color name="background_color_efefef">#888888</color>
+    <color name="backgroudn_color_ddffffff">#ffffff</color>
+    <color name="config_bnt_select_color">#D9D9D9</color>
+    <color name="video_share_config_bg_color">#efefef</color>
+</resources>

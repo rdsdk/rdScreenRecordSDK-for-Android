@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 录制类别 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/recorder_type" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/recorder_type_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/recsdk_config_item_style"
+                        android:layout_width="100dp"
+                        android:text="@string/recorder_type_local" />
+
+                    <TextView
+                        android:id="@+id/out_local"
+                        style="@style/recsdk_config_item_style"
+                        android:singleLine="true"
+                        android:text="/sdcard/zzoutscreen.mp4" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    android:id="@+id/recorder_type_rtmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/recsdk_config_item_style"
+                        android:layout_width="100dp"
+                        android:text="@string/recorder_type_rtmp" />
+
+                    <EditText
+                        android:id="@+id/out_rtmp"
+                        style="@style/recsdk_config_item_style"
+                        android:hint="请设置rtmp推流地址"
+                        android:text="rtmp://" />
+                </LinearLayout>
+
+                <View style="@style/setting_line" />
+
+                <LinearLayout
+                    android:id="@+id/recorder_type_uid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:singleLine="true" >
+
+                    <TextView
+                        style="@style/recsdk_config_item_style"
+                        android:layout_width="100dp"
+                        android:text="@string/recorder_type_uid" />
+
+                    <EditText
+                        android:id="@+id/out_uid"
+                        style="@style/recsdk_config_item_style"
+                        android:hint="设置UID(数字或小写字母的组合(3-32个字符))"
+                        android:singleLine="true"
+                        android:text="aabbcc" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <!-- 视屏质量 -->
+
+            <LinearLayout
+                android:id="@+id/ll_vdl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/video_definition" />
+
+                <TextView
+                    android:id="@+id/tv_vdl_info"
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@null" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_vdl_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_vdl_low"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/vdl_low" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_vdl_normal"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/vdl_normal" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_vdl_high"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/vdl_high" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <!-- 录制方式 -->
+
+            <LinearLayout
+                android:id="@+id/ll_cap_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/cap_mode" />
+
+                <TextView
+                    android:id="@+id/tv_cap_mode_info"
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@null" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_cap_mode_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_cap_mode_sys"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/cap_mode_sys" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_cap_mode_virtual"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/cap_mode_virtual" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_cap_mode_ll"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/cap_mode_ll" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+            <!-- 编码方式 -->
+
+            <LinearLayout
+                android:id="@+id/ll_encode_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/encode_mode" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_encode_mode_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_encode_mode_hard"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/encode_mode_hard" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_encode_mode_soft"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/encode_mode_soft" />
+            </LinearLayout>
+
+            <!-- 是否录音 -->
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_is_audio_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/is_or_no_audio_record" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_is_audio_record_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_is_audio_record_yes"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/is" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_is_audio_record_no"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/no" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <!-- 是否修正颜色 -->
+
+            <LinearLayout
+                android:id="@+id/ll_is_swap_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/recsdk_item_menu_style"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/is_or_no_swap_color" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_is_swap_color_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_is_swap_color_yes"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/is" />
+
+                <View style="@style/setting_line" />
+
+                <TextView
+                    android:id="@+id/tv_is_swap_color_no"
+                    style="@style/recsdk_config_item_style"
+                    android:text="@string/no" />
+            </LinearLayout>
+
+            <View style="@style/setting_line" />
+
+            <Button
+                android:id="@+id/restore_default_button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="#1cb4a0"
+                android:onClick="restoreSetting"
+                android:text="@string/btn_restore_default"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="recsdk_title">RdRecSDK</string>
+    <string name="recsdk_notification_info">RdRecSDK已开启!</string>
+    
+
+</resources>
