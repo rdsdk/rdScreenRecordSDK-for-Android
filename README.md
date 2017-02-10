@@ -2,8 +2,12 @@
 
 全屏录制Android手机端桌面上的任意程序并生成视频文件或使用rtmp协议推流到云服务器；也支持OpenGLView、Unity3D或Coco2dx游戏引擎，并支持后台录制，为录制手游等手机端视频应用提供完美的解决方案。
 
-###关于授权：
+###功能试用：
+下载以下demo应用，可以进行功能试用。
 
+[点击下载](https://raw.githubusercontent.com/rdsdk/rdScreenRecordSDK-for-Android/master/RdRecSDKDemo-release.apk)
+
+###关于授权：
 www.rdsdk.com 致力于专业的人做专业的事，降低客户的开发时间和开发成本，你只需要支付很少的费用，花上几个小时就能增加视频编辑功能。
 
 [单击申请试用](http://www.rdsdk.com/home/business/registers)
