@@ -2,6 +2,10 @@
 
 全屏录制Android手机端桌面上的任意程序并生成视频文件或使用rtmp协议推流到云服务器；也支持OpenGLView、Unity3D或Coco2dx游戏引擎，并支持后台录制，为录制手游等手机端视频应用提供完美的解决方案。
 
+###最新SDK下载(以下链接是最新的，github代码会稍有延迟)：
+
+[SDK下载请单击](http://d.56show.com/rdsdk/private/pack/rd_screen_android_20160615.zip)
+
 ###功能试用：
 下载以下demo应用，可以进行功能试用。
 
