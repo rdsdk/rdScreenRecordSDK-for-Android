@@ -4,7 +4,7 @@
 
 ###最新SDK下载(以下链接是最新的，github代码会稍有延迟)：
 
-[SDK下载请单击](http://d.56show.com/rdsdk/private/pack/rd_screen_android_20160615.zip)
+[SDK下载请单击](http://d.56show.com/rdsdk/private/pack/rd_screen_android_20170612.zip)
 
 ###功能试用：
 下载以下demo应用，可以进行功能试用。
